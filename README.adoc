@@ -18,7 +18,13 @@ in `project.clj` so match your version number (in the double quotes), e.g.
     [com.datomic/datomic-pro "1.0.6269"]
 
 where the version number `1.0.6269` should match whatever is in the `VERSION` file at the root of your
-distribution.
+Datomic distribution.
+
+== Examine the code
+
+All the action is in the single unit test file located here:
+
+    test/tst/tupelo_datomic/basic.clj
 
 == Run the unit tests
 
@@ -73,6 +79,13 @@ Ran 2 tests containing 3 assertions.
 0 failures, 0 errors.
 ```
 
+
+## Wanna do more?
+
+Checkout these two projects:
+
+- link:https://github.com/cloojure/tupelo[Tupelo Clojure] - Clojure with a Spoonful of Honey (a library of helper & convenience functions)
+- link:https://github.com/io-tupelo/clj-template[clj-template] - A template for starting new Clojure projects (just clone and go!)
 
 == Requirements
  - Clojure 1.8 or above
