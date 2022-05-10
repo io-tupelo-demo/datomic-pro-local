@@ -7,7 +7,7 @@ installation of Datomic Pro (i.e. not Datomic Cloud)
 == Getting Started
 
 First, you need a copy of Datomic. Follow along
-link:https://docs.datomic.com/on-prem/getting-started/dev-setup.html:[as described on the Datomic website]
+link:https://docs.datomic.com/on-prem/getting-started/dev-setup.html[as described on the Datomic website]
 for "Local Dev Setup".
 
 == Fix your version spec in `project.clj`
