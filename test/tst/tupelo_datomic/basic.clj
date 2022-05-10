@@ -35,14 +35,14 @@
                     :where [_ :movie/title ?movie-title]])
 
 (defn exercise-db [conn]
-  (nl) (println "exercise-db - enter")
-  (nl) (spyx conn)
+  (is= (type conn) datomic.peer.LocalConnection)
   (let-spy-pretty
     [s1 (d/transact conn [{:db/doc "Hello World"}])
      r1 (d/transact conn movie-schema)
      r2 (d/transact conn first-movies)
      r3 (d/q all-titles-q (d/db conn))]
-    (println "exercise-db - exit")))
+    (is-set= (keys @s1) [:db-before :db-after :tx-data :tempids])
+    (is-set= r3 [["Commando"] ["The Goonies"] ["Repo Man"]])))
 
 (dotest
   (d/create-database datomic-uri) ; create the DB

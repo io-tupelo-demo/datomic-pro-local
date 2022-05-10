@@ -1,5 +1,5 @@
 
-= io-tupelo-demo/datomic-local
+= io-tupelo-demo/datomic-pro-local
 
 This demo project shows a basic "Hello World" usage of the Datomic DB with a "local"
 installation of Datomic Pro (i.e. not Datomic Cloud)
@@ -38,45 +38,39 @@ lein test tst._bootstrap
    Clojure 1.10.0    Java 1.8.0_322
 --------------------------------------
 
-lein test tst.tupelo-datomic.basic
-
-exercise-db - enter
-
-conn => #object[datomic.peer.LocalConnection 0x4f6f13f0 "datomic.peer.LocalConnection@4f6f13f0"]
+Testing tst.tupelo-datomic.basic
 s1 =>
-#<promise$settable_future$reify__6969@bac9c81:
-  {:db-before datomic.db.Db@89341a6d,
-   :db-after datomic.db.Db@34f0f214,
+#<promise$settable_future$reify__6969@125c2dd5:
+  {:db-before datomic.db.Db@708537d6,
+   :db-after datomic.db.Db@9351be8b,
    :tx-data
-   [#datom[13194139534312 50 #inst "2022-05-10T06:45:26.081-00:00" 13194139534312 true] #datom[17592186045417 62 "Hello World" 13194139534312 true]],
-   :tempids {-9223301668109598134 17592186045417}}>
+   [#datom[13194139534312 50 #inst "2022-05-10T06:54:51.896-00:00" 13194139534312 true] #datom[17592186045417 62 "Hello World" 13194139534312 true]],
+   :tempids {-9223301668109598085 17592186045417}}>
 r1 =>
-#<promise$settable_future$reify__6969@50a0404b:
-  {:db-before datomic.db.Db@34f0f214,
-   :db-after datomic.db.Db@66ab5edb,
+#<promise$settable_future$reify__6969@7770c8a2:
+  {:db-before datomic.db.Db@9351be8b,
+   :db-after datomic.db.Db@a8aeaee9,
    :tx-data
-   [#datom[13194139534314 50 #inst "2022-05-10T06:45:26.121-00:00" 13194139534314 true] #datom[72 10 :movie/title 13194139534314 true] #datom[72 40 23 13194139534314 true] #datom[72 41 35 13194139534314 true] #datom[72 62 "The title of the movie" 13194139534314 true] #datom[73 10 :movie/genre 13194139534314 true] #datom[73 40 23 13194139534314 true] #datom[73 41 35 13194139534314 true] #datom[73 62 "The genre of the movie" 13194139534314 true] #datom[74 10 :movie/release-year 13194139534314 true] #datom[74 40 22 13194139534314 true] #datom[74 41 35 13194139534314 true] #datom[74 62 "The year the movie was released in theaters" 13194139534314 true] #datom[0 13 72 13194139534314 true] #datom[0 13 73 13194139534314 true] #datom[0 13 74 13194139534314 true]],
+   [#datom[13194139534314 50 #inst "2022-05-10T06:54:51.905-00:00" 13194139534314 true] #datom[72 10 :movie/title 13194139534314 true] #datom[72 40 23 13194139534314 true] #datom[72 41 35 13194139534314 true] #datom[72 62 "The title of the movie" 13194139534314 true] #datom[73 10 :movie/genre 13194139534314 true] #datom[73 40 23 13194139534314 true] #datom[73 41 35 13194139534314 true] #datom[73 62 "The genre of the movie" 13194139534314 true] #datom[74 10 :movie/release-year 13194139534314 true] #datom[74 40 22 13194139534314 true] #datom[74 41 35 13194139534314 true] #datom[74 62 "The year the movie was released in theaters" 13194139534314 true] #datom[0 13 72 13194139534314 true] #datom[0 13 73 13194139534314 true] #datom[0 13 74 13194139534314 true]],
    :tempids
-   {-9223301668109598133 72,
-    -9223301668109598132 73,
-    -9223301668109598131 74}}>
+   {-9223301668109598084 72,
+    -9223301668109598083 73,
+    -9223301668109598082 74}}>
 r2 =>
-#<promise$settable_future$reify__6969@6eb568fc:
-  {:db-before datomic.db.Db@66ab5edb,
-   :db-after datomic.db.Db@f764c77f,
+#<promise$settable_future$reify__6969@6cc45cf2:
+  {:db-before datomic.db.Db@a8aeaee9,
+   :db-after datomic.db.Db@17526490,
    :tx-data
-   [#datom[13194139534315 50 #inst "2022-05-10T06:45:26.156-00:00" 13194139534315 true] #datom[17592186045420 72 "The Goonies" 13194139534315 true] #datom[17592186045420 73 "action/adventure" 13194139534315 true] #datom[17592186045420 74 1985 13194139534315 true] #datom[17592186045421 72 "Commando" 13194139534315 true] #datom[17592186045421 73 "action/adventure" 13194139534315 true] #datom[17592186045421 74 1985 13194139534315 true] #datom[17592186045422 72 "Repo Man" 13194139534315 true] #datom[17592186045422 73 "punk dystopia" 13194139534315 true] #datom[17592186045422 74 1984 13194139534315 true]],
+   [#datom[13194139534315 50 #inst "2022-05-10T06:54:51.924-00:00" 13194139534315 true] #datom[17592186045420 72 "The Goonies" 13194139534315 true] #datom[17592186045420 73 "action/adventure" 13194139534315 true] #datom[17592186045420 74 1985 13194139534315 true] #datom[17592186045421 72 "Commando" 13194139534315 true] #datom[17592186045421 73 "action/adventure" 13194139534315 true] #datom[17592186045421 74 1985 13194139534315 true] #datom[17592186045422 72 "Repo Man" 13194139534315 true] #datom[17592186045422 73 "punk dystopia" 13194139534315 true] #datom[17592186045422 74 1984 13194139534315 true]],
    :tempids
-   {-9223301668109598130 17592186045420,
-    -9223301668109598129 17592186045421,
-    -9223301668109598128 17592186045422}}>
+   {-9223301668109598081 17592186045420,
+    -9223301668109598080 17592186045421,
+    -9223301668109598079 17592186045422}}>
 r3 =>
 [["Commando"] ["The Goonies"] ["Repo Man"]]
-exercise-db - exit
 
-Ran 2 tests containing 0 assertions.
+Ran 2 tests containing 3 assertions.
 0 failures, 0 errors.
-  36.38s user 1.57s system 294% cpu 12.885 total
 ```
 
 
