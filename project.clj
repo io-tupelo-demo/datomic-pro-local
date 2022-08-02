@@ -4,8 +4,8 @@
   :dependencies [
                  [com.datomic/datomic-pro "1.0.6269"]
                  [org.clojure/clojure "1.11.1"]
-                 [prismatic/schema "1.2.1"]
-                 [tupelo "22.05.04"]
+                 [prismatic/schema "1.3.5"]
+                 [tupelo "22.07.25a"]
                  ]
   :resource-paths ["resources/"]
 
