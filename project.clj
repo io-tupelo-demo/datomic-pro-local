@@ -2,7 +2,7 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [
-                 [com.datomic/datomic-pro "1.0.6269"]
+                 [com.datomic/datomic-pro "1.0.6397"]
                  [org.clojure/clojure "1.11.1"]
                  [prismatic/schema "1.3.5"]
                  [tupelo "22.07.25a"]
